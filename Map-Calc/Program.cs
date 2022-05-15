@@ -6,6 +6,7 @@ namespace Map_Calc
     {
         static void Main(string[] args)
         {
+            var culture = new CultureInfo("de-DE");
             
             string Answer;
             Console.WriteLine("Hello! Welcome to the Map Calculator!");
@@ -24,7 +25,7 @@ namespace Map_Calc
                     break;
                 
                 case "3":
-                    
+                    option3();
                     break;
             }
             
@@ -88,9 +89,7 @@ namespace Map_Calc
                 {
                     Console.WriteLine("Alright!");
                     Console.WriteLine("So what's the real length?");
-
-                    var culture = new CultureInfo("de-DE");
-
+                    
                     RealLengthString = Console.ReadLine(); // assuming 30000
                     RealLength = double.Parse(RealLengthString, culture);
 
@@ -105,6 +104,48 @@ namespace Map_Calc
                     Scaleeven = (int)Math.Round(Scalenoteven, 0, MidpointRounding.ToZero);
                     Console.WriteLine("The Scale is 1:" + Scaleeven); // outputs 1:352941
                 }
+                else if (Answer == "kilometers")
+                {
+                    Console.WriteLine("Alright!");
+                    Console.WriteLine("So what's the real length?");
+
+                    RealLengthString = Console.ReadLine(); // assuming 30000
+                    RealLength = double.Parse(RealLengthString, culture);
+
+                    RealLengthincm = RealLength * 100000;
+                    Console.WriteLine("now what's the length on the map in cm");
+
+                    MapLengthString = Console.ReadLine(); // assuming 8,5
+                    MapLength = double.Parse(MapLengthString, culture);
+
+                    //RealLengthincm and Maplength are taken from the user 
+                    Scalenoteven = RealLengthincm / MapLength;
+                    Scaleeven = (int)Math.Round(Scalenoteven, 0, MidpointRounding.ToZero);
+                    Console.WriteLine("The Scale is 1:" + Scaleeven); // outputs 1:352941
+                }
+                else
+                {
+                    Console.WriteLine("hmmm.... Somethings not right");
+                    Console.WriteLine("Would you like to try again?");
+                    Console.WriteLine("y/n");
+                    string Answer3;
+                    Answer3 = Console.ReadLine();
+                    if (Answer3 == "y")
+                    {
+                        option2();
+                    }
+                    else if (Answer3 == "n")
+                    {
+                        Console.WriteLine("Alright...");
+                    }
+                }
+            }
+
+            void option3()
+            {
+                int Scale;
+                double Area;
+                Console.WriteLine("Alright!");
             }
         }
     }
