@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BFPNBkh4nfrAHdbNlgPY0nvzURKVLUDPwL+V79Qlh3NJensGbVnP13fCuNwzEyXpwTKk8c5NCtMsnRbLKpn1iA==",
+  "dgSpecHash": "vhxmq/tL3lIkwsY4CgPbbxJMJ+XMq+Akn76pfaqNyy3zwkXd4wYAGX6EAjG7IyCsd9cbN4HQ4CQzthELkZG4nw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jan\\Desktop\\Map-Calc\\Map-Calc\\Map-Calc.csproj",
+  "projectFilePath": "/home/hain/Documents/GitHub/Map-Calc/Map-Calc/Map-Calc.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

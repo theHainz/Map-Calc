@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jan\\Desktop\\Map-Calc\\Map-Calc\\Map-Calc.csproj": {}
+    "/home/hain/Documents/GitHub/Map-Calc/Map-Calc/Map-Calc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jan\\Desktop\\Map-Calc\\Map-Calc\\Map-Calc.csproj": {
+    "/home/hain/Documents/GitHub/Map-Calc/Map-Calc/Map-Calc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jan\\Desktop\\Map-Calc\\Map-Calc\\Map-Calc.csproj",
+        "projectUniqueName": "/home/hain/Documents/GitHub/Map-Calc/Map-Calc/Map-Calc.csproj",
         "projectName": "Map-Calc",
-        "projectPath": "C:\\Users\\Jan\\Desktop\\Map-Calc\\Map-Calc\\Map-Calc.csproj",
-        "packagesPath": "C:\\Users\\Jan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jan\\Desktop\\Map-Calc\\Map-Calc\\obj\\",
+        "projectPath": "/home/hain/Documents/GitHub/Map-Calc/Map-Calc/Map-Calc.csproj",
+        "packagesPath": "/home/hain/.nuget/packages/",
+        "outputPath": "/home/hain/Documents/GitHub/Map-Calc/Map-Calc/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/hain/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
         }
       }
     }
