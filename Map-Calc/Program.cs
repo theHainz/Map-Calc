@@ -14,6 +14,7 @@ namespace Map_Calc
                 Console.WriteLine("What would you like to do?");
                 Console.WriteLine("Calculate how big are the lines on the map? type: 1");
                 Console.WriteLine("Calculate the Scale via Real Length and Length on Map? type: 2");
+                Console.WriteLine("Calculate area size? type: 3");
                 Answer = Console.ReadLine();
                 switch (Answer)
                 {
@@ -23,6 +24,9 @@ namespace Map_Calc
 
                     case "2":
                         option2();
+                        break;
+                    case "3":
+                        option3();
                         break;
                 }
 
@@ -137,7 +141,35 @@ namespace Map_Calc
                         }
                     }
                 }
-
+                void option3()
+                {
+                    int Skala;
+                    int Skala2;
+                    double Area;
+                    string Skalastring;
+                    string Skalastring2;
+                    string Areastring;
+                    double Area2;
+                    double Area3;
+                    double Area4;
+                    Console.WriteLine("Alright!");
+                    Console.WriteLine("Give me a Scale");
+                    Skalastring = Console.ReadLine();
+                    Skalastring2 = Skalastring.TrimEnd((char)0);
+                    Skala = Convert.ToInt32(Skalastring2);
+                                       
+                    
+                    Console.WriteLine("Alright");
+                    Console.WriteLine("Now the size of the area in ha");
+                    Areastring = Console.ReadLine();
+                    Areastring.TrimEnd((char)0);
+                    Area = Convert.ToDouble(Areastring);
+                    Area2 = Area * 10;
+                    Area3 = Area2 / Skala;
+                    Area4 = Area3 * 2;
+                    
+                    Console.WriteLine("the size of the area is " + Area4 + "dm2");
+                }
             }
         }
     }
